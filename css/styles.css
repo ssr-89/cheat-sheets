@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+	font-family: "Impact", "Exo 2", sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+.container {
+	margin: 0 auto;
+	padding: 30px;
+	max-width: 900px;
+}
+ul,ol,li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 36px;
+}
+
+/* HEADER */
+.header {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+.header-menu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.header-menu__link {
+	outline: none;
+}
+.header-menu__link {
+	position: relative;
+}
+.header-menu__link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+.header-menu__link:hover::after {
+  transform: scale(1);
+}
+
+/* HERO */
